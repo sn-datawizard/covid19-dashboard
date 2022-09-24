@@ -16,6 +16,6 @@ API provides daily refreshed data.
 
 App-1 fetches data from API and uploads response to Google Cloud Storage.
 
-App-2 imports data which is stored in Cloud Storage to Google Cloud MySQL.
+App-2 transforms data which is stored in Cloud Storage, transforms and loads data into a Google Cloud MySQL database.
 
 ![image](https://user-images.githubusercontent.com/77932366/192109211-c5112c9e-1b4c-4bfb-9bc2-7acc81a3d19b.png)
