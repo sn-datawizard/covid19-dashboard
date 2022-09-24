@@ -10,6 +10,6 @@ RUN pip3 install google-cloud-storage
 WORKDIR /app
 
 ADD app.py /app
-ADD sns-covid-gcp-b6475c6924f9.json /app
+ADD KEYFILE.json /app #GCP service account keyfile
 
 CMD ["python3", "./app.py"]
