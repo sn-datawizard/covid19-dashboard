@@ -77,10 +77,10 @@ mydf = pd.DataFrame(list(zip(l_index, l_total,l_vacc1_total,l_vacc1_biontech,l_v
 print(mydf)
 mydf.to_csv('./data.csv', sep=';', index=False)
 
-client = storage.Client.from_service_account_json('./sns-covid-gcp-b6475c6924f9.json')
+client = storage.Client.from_service_account_json('KEYFILE.json')
 #buckets_list = list(client.list_buckets())
 #print(buckets_list)
-bucket = client.get_bucket('covid-gcp-bucket1')
+bucket = client.get_bucket(<bucketname>)
 
 blob = bucket.blob('data') #Target path
 blob.upload_from_filename('./data.csv') #Source path
