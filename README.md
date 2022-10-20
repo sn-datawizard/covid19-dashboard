@@ -1,6 +1,6 @@
 # Covid19 Dashboard
 
-*Currently under development.*
+*Currently paused.*
 
 ## Dashboard
 
